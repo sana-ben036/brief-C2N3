@@ -1,0 +1,19 @@
+
+header{
+    font-family: 'Barlow Condensed';
+    nav{
+        width: 50%;
+        float: right;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: $navbgr;
+            li{
+                color:$navcolor2;
+                display: inline-block;
+            }
+        }
+    }
+
+}

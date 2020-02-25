@@ -1,0 +1,19 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "Le projet permet d'améliorer vos compétences dans un environnement de travail réel.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w --output-style compressed  public/scss -o public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sana-ben036/brief-C2N3.git"
+  },
+  "author": "sana ben",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sana-ben036/brief-C2N3/issues"
+  },
+  "homepage": "https://github.com/sana-ben036/brief-C2N3#readme"
+}
