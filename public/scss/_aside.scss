@@ -1,0 +1,9 @@
+aside{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .info{
+        display: block;
+        padding:5% 5% 0 10%;
+    }
+}
