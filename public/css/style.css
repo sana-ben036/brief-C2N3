@@ -1,1 +1,74 @@
-body{font-family:'Barlow';font-variant-caps:all-petite-caps;font-size:1.5em}header nav{font-family:'Barlow Condensed';width:50%;height:350px;border-radius:0 0 0 40px;float:right;background-color:#eef3f6}header nav .menu{display:flex;flex-direction:row;justify-content:center;color:#a0a1ac;font-weight:700}header nav .menu__item{display:inline-block;padding:5%;color:#242942}header nav .menu__item--color{color:#a0a1ac}header .logo{width:50%;height:350px;padding:5% 5% 0 10%}header .logo img{float:left}
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Barlow';
+  font-variant-caps: all-petite-caps;
+  font-size: 1.5em;
+  padding-left: 15%; }
+
+header nav {
+  font-family: 'Barlow Condensed';
+  width: 50%;
+  height: 350px;
+  border-radius: 0 0 0 40px;
+  float: right;
+  background-color: #eef3f6; }
+  header nav .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 700; }
+    header nav .menu__item {
+      display: inline-block;
+      padding: 5%;
+      color: #242942; }
+      header nav .menu__item--color {
+        color: #a0a1ac; }
+
+header .logo {
+  width: 50%;
+  height: 350px; }
+  header .logo img {
+    float: left;
+    padding: 5% 0; }
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  section .info {
+    background-color: mediumvioletred;
+    display: block;
+    width: 50%;
+    color: #a0a1ac; }
+    section .info span {
+      background-color: #242942;
+      color: #eef3f6;
+      border-radius: 10px;
+      padding: 2px 10px; }
+    section .info__para {
+      color: #5b5f71;
+      font-weight: 700; }
+      section .info__para--larg {
+        color: #242942;
+        font-size: 3em;
+        font-weight: bolder; }
+    section .info .info__button {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      section .info .info__button button {
+        display: inline-block;
+        font-variant-caps: all-petite-caps;
+        background-color: #ff5c5c;
+        color: #eef3f6;
+        border: none;
+        border-radius: 5px; }
+      section .info .info__button p {
+        display: inline-block; }
+  section .board {
+    background-color: mediumturquoise;
+    display: block;
+    width: 50%; }

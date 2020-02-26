@@ -6,20 +6,20 @@ header{
         height: 350px;
         border-radius: 0 0 0 40px;
         float:right;
-        background-color: $navbgr;
+        background-color: $color4;
+
         
         .menu{
             display: flex;
             flex-direction: row;
             justify-content: center;
-            color:$navcolor2;
             font-weight: 700;
             &__item{ 
                 display: inline-block;
                 padding: 5%;
-                color: $navcolor1;
+                color: $color1;
                 &--color{
-                    color:$navcolor2;
+                    color:$color2;
                 }
                
             }
@@ -29,9 +29,10 @@ header{
     .logo{
         width: 50%;
         height: 350px;
-        padding:5% 5% 0 10%;
         img{
             float: left;
+            padding:5% 0;
+
         }
     }
 
