@@ -1,14 +1,18 @@
 section{
+    position: fixed;
+    top: 185px;
+    left: 0;
+    right: 0;
     width: 100%;
     display: flex;
     flex-direction: row;
 
 
     .info {
-        background-color: mediumvioletred;
         display: block;
         width: 50%;
         color:$color2;
+        padding: 2% 0 0 15%;
 
         span{
             background-color: $color1;
@@ -33,26 +37,31 @@ section{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            margin-top: 20%;
             button{
                 display: inline-block;
                 font-variant-caps: all-petite-caps;
                 background-color: $primarycolor;
                 color: $color4;
+                font-weight: bold;
                 border: none;
                 border-radius: 5px;
+                padding: 2% 5%;
 
             }
             p{
                 display: inline-block;
+                margin-left: 2%;
             }
         }
 
     }
 
     .board {
-        background-color: mediumturquoise;
         display: block;
         width: 50%;
+        
+       
       
        
        
