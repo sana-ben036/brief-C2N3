@@ -1,8 +1,8 @@
 section{
     position: fixed;
     top: 185px;
-    left: 0;
-    right: 0;
+    left: 0 ;
+    right: 0 ;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -40,13 +40,17 @@ section{
             margin-top: 20%;
             button{
                 display: inline-block;
+                font-family: $secondaryfont;
+                font-size: 1em;
+                font-weight: 400;
+                text-align:center;
                 font-variant-caps: all-petite-caps;
                 background-color: $primarycolor;
                 color: $color4;
-                font-weight: bold;
                 border: none;
                 border-radius: 5px;
-                padding: 2% 5%;
+                padding: 1% 5%;
+               
 
             }
             p{
@@ -60,12 +64,9 @@ section{
     .board {
         display: block;
         width: 50%;
-        
-       
-      
-       
-       
-    
+        img{
+            padding-left: 10%;
+        }
 
     }
 }

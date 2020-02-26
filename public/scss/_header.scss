@@ -1,33 +1,40 @@
 
 header{
     position:fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 0 ;
+    left: 0 ;
+    right: 0 ;
     nav{
-        font-family: 'Barlow Condensed';
-        width: 50%;
+        width: 46%;
         height: 400px;
-        border-radius: 0 0 0 40px;
+        border-radius: 0 0 0 50px;
         float:right;
         background-color: $color4;
-
-        
         .menu{
-            background-color: mediumvioletred;
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            font-family: $secondaryfont;
+            color: $color1;
             font-weight: 700;
+            justify-content: center;
             &__item{ 
                 display: inline-block;
-                padding: 5%;
-                color: $color1;
+                padding: 5% 3%;
                 &--color{
                     color:$color2;
+                    hr{
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 5px;
+                        background-color: $color2;
+                        position: relative;
+                        top: 15px;
+                    }
                 }
-               
+    
             }
+           
+            
         }
     
     }
@@ -37,7 +44,7 @@ header{
         padding-left: 15%;
         img{
             float: left;
-            padding:5% 0;
+            padding :5% 0;
 
         }
     }
