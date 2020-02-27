@@ -14,6 +14,7 @@ section{
         width: 50%;
         color:$color2;
         padding: 2% 0 0 15%;
+        letter-spacing: 2px;
 
         span{
             background-color: $color1;
@@ -22,21 +23,20 @@ section{
             padding: 0 10px 6px 10px;
             margin-right: 2%;
         }
-        &__para1{
-            color:$color1;
-            font-family:$secondaryfont;
-            font-size: 3em;
-            font-weight: bolder;
-            line-height: .8;
-            margin: 5% 0;
-
-        }
-        &__para2{
-            font-weight: bolder;
-            margin: 5% 0;
-            font-variant-caps: initial;
-
-          
+        &__spacing{
+            letter-spacing: normal;
+            padding: 5% 0;
+            &--style1{
+                color:$color1;
+                font-family:$secondaryfont;
+                font-size: 4em;
+                font-weight: bolder;
+                line-height: .6;
+            }
+            &--style2{
+                font-variant-caps: normal;
+                color:$color3;
+            }
         }
         &__button{
             display: flex;
@@ -69,22 +69,42 @@ section{
         display: block;
         width: 50%;
         img{
-            padding-left: 10%;
+            padding: 10%;
         }
     }
 }
-@media screen and (min-width:375px){
+@media screen and (min-width:376px){
     section{
         flex-wrap: nowrap;
      
     }
 
 }
-@media screen and (max-width:375px){
-    .board{
-        img{
-            padding: 0;
-            width: 180%;
+@media screen and (max-width:376px){
+    
+    section{
+        top: 60px;
+        .board{
+            width: 100%;
+            img{
+                width: 138%;
+                padding-left: 0;
+            }
+
         }
+        .info{
+            width: 100%;
+            margin-top: 50px;
+            padding-left: 10%;
+            font-size: 1em;
+            &__spacing{
+                font-size: 2.5em;
+                &--style2{
+                    font-size: .8em;
+                }
+            }
+        }
+
     }
+    
 }

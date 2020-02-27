@@ -10,6 +10,7 @@ header{
         border-radius: 0 0 0 50px;
         float:right;
         background-color: $color4;
+        .burger{display: none;}
         .menu{
             display: flex;
             flex-direction: row;
@@ -36,12 +37,12 @@ header{
                 text-decoration: none;
                 color:$color1;
                 &:hover{
-                    text-decoration: underline;
+                    text-decoration: underline;    
                 }
                 &--color{
                     color:$color2;
-                }
-            }   
+                }  
+            }      
         }
     
     }
@@ -56,5 +57,24 @@ header{
         }
     }
 
+}
+@media screen and (max-width:376px){
+    header{
+        .logo{
+            padding:0;
+            img{width: 12%;padding: 15%;} 
+        }
+        nav{
+            .menu{display: none;}   
+            .burger{
+                display: block;
+                float: right;
+                padding:15% ;
+            }
+
+
+        }
+        
+    }
 }
 
