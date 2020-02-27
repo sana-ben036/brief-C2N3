@@ -6,6 +6,7 @@ section{
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap-reverse;
 
 
     .info {
@@ -23,6 +24,7 @@ section{
         }
         &__para1{
             color:$color1;
+            font-family:$secondaryfont;
             font-size: 3em;
             font-weight: bolder;
             line-height: .8;
@@ -68,6 +70,21 @@ section{
         width: 50%;
         img{
             padding-left: 10%;
+        }
+    }
+}
+@media screen and (min-width:375px){
+    section{
+        flex-wrap: nowrap;
+     
+    }
+
+}
+@media screen and (max-width:375px){
+    .board{
+        img{
+            padding: 0;
+            width: 180%;
         }
     }
 }

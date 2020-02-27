@@ -21,26 +21,29 @@ header {
     header nav .menu {
       display: flex;
       flex-direction: row;
-      font-family: Barlow Condensed;
-      color: #242942;
-      font-weight: 700;
       justify-content: center; }
       header nav .menu__item {
         display: inline-block;
+        font-family: Barlow Condensed;
+        font-weight: 700;
+        list-style-type: none;
+        color: #242942;
         padding: 5% 3%; }
-        header nav .menu__item a:link {
-          text-decoration: none; }
-          header nav .menu__item a:link:hover {
-            text-decoration: underline; }
-        header nav .menu__item--color {
+        header nav .menu__item hr {
+          width: 5px;
+          height: 5px;
+          border: none;
+          border-radius: 50%;
+          background-color: #a0a1ac;
+          position: relative;
+          top: 15px; }
+      header nav .menu__link {
+        text-decoration: none;
+        color: #242942; }
+        header nav .menu__link:hover {
+          text-decoration: underline; }
+        header nav .menu__link--color {
           color: #a0a1ac; }
-          header nav .menu__item--color hr {
-            width: 5px;
-            height: 5px;
-            border-radius: 5px;
-            background-color: #a0a1ac;
-            position: relative;
-            top: 15px; }
   header .logo {
     width: 50%;
     height: 350px;
@@ -56,7 +59,8 @@ section {
   right: 0;
   width: 100%;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-wrap: wrap-reverse; }
   section .info {
     display: block;
     width: 50%;
@@ -70,6 +74,7 @@ section {
       margin-right: 2%; }
     section .info__para1 {
       color: #242942;
+      font-family: Barlow Condensed;
       font-size: 3em;
       font-weight: bolder;
       line-height: .8;
@@ -105,3 +110,12 @@ section {
     width: 50%; }
     section .board img {
       padding-left: 10%; }
+
+@media screen and (min-width: 375px) {
+  section {
+    flex-wrap: nowrap; } }
+
+@media screen and (max-width: 375px) {
+  .board img {
+    padding: 0;
+    width: 180%; } }
