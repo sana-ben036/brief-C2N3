@@ -10,11 +10,20 @@ header{
         border-radius: 0 0 0 50px;
         float:right;
         background-color: $color4;
-        .burger{display: none;}
+        .burger{
+            display: none;
+            float: right;
+            padding:15% ;
+        }
         .menu{
             display: flex;
             flex-direction: row;
             justify-content: center;
+            .close{
+                display:none;
+                width:5%;
+                right: 0;
+            }
             &__item{ 
                 display: inline-block;
                 font-family: $secondaryfont;
@@ -62,15 +71,41 @@ header{
     header{
         .logo{
             padding:0;
-            img{width: 12%;padding: 15%;} 
+            img{width: 12%;padding: 15% 10% ;} 
         }
         nav{
-            .menu{display: none;}   
+            
             .burger{
                 display: block;
-                float: right;
-                padding:15% ;
             }
+            .menu{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 50px;
+                left: 15px;
+                right: 20px;
+                width: 250px;
+                height: 250px;
+                background-color: white;
+                padding: 10px;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+                &__item{
+                    text-align: center;
+                    hr{
+                        width: 80%;
+                        height: 1px;
+
+                    }
+                }
+               
+                .close{
+                    display:block;
+                }
+                   
+            }   
+            
+            
 
 
         }
