@@ -3,35 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap" rel="stylesheet">
     <title>Project tracking intro component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+  
   </head>
-  <body>
-    Product Features Pricing Login New Monograph Dashboard Powerful insights
-    into your team Project planning and time tracking for agile teams Schedule a
-    demo to see a live preview
 
-    <footer>
-      <p class="attribution">Coded by <a href="#">Your Name Here</a>.</p>
-    </footer>
+
+  <body>
+    
+    <header>
+      <div class="background"></div>
+      <nav>
+        <img class="logo" src="./images/logo.svg" alt="logo">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="open"><img src="./images/icon-hamburger.svg" alt="burger icon"></label>
+        <label for="checkbox" class="close"><img src="./images/icon-close.svg" alt="close icon"></label>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Product</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Features</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Pricing</a></li>
+          <li class="menu__item"><hr></li>
+          <li class="menu__item" ><a class="menu__link menu__link--color" href="#">Login</a></li> 
+        </ul>
+      </nav>
+      
+    </header>
+
+    <section>
+      <div class="info">
+        <p><span>New</span> Monograph Dashboard</p>
+        <p class="info__spacing info__spacing--style1">Powerful insights into your team </p>
+        <p class="info__spacing info__spacing--style2">Project planning and time tracking<br> for agile teams</p>
+        <div class="info__button">
+          <button type="button">Schedule a demo</button>  
+          <p>to see a preview</p>
+
+        </div>
+        
+      </div>
+      <!---------------------fin info ----------------->
+      <div class="board">
+        <img src="./images/illustration-devices.svg" alt="dashboard">
+      </div>
+      <!---------------------fin img ----------------->
+    
+    </section>
+      
   </body>
 </html>

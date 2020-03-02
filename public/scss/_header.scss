@@ -1,0 +1,132 @@
+
+
+
+header{
+    .background{
+        width: 46%;
+        height: 400px;
+        border-radius: 0 0 0 50px;
+        float:right;
+        background-color: $color4;
+    }
+    
+    nav{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        right: 5%;
+        .logo{
+            float: left;
+            padding-left: 11%;
+        }
+       
+        .open, .close{
+            float: right;
+            display: none;
+        }
+        #checkbox{
+            
+            visibility: hidden;
+            z-index: -11;
+        }
+        .menu{
+            float: right;
+            width: 40%;           
+            &__item{ 
+                display: inline-block;
+                font-family: $secondaryfont;
+                font-weight: 700;
+                list-style-type: none;
+                color: $color1;
+                padding: 0 5%;
+
+                hr{
+                    width: 5px;
+                    height: 5px;
+                    border: none;
+                    border-radius: 50%;
+                    background-color: $color2;
+                    position: relative;
+                    top: 0;
+                }
+            }
+            &__link{
+                text-decoration: none;
+                color:$color1;
+                &:hover{
+                    text-decoration: underline;    
+                }
+                &--color{
+                    color:$color2;
+                }  
+            }      
+        }
+    
+    }
+    
+    
+
+}
+@media screen and (max-width:400px){
+    header{
+       
+        nav{
+            .logo{
+                padding-left: 6px;
+                padding-top: 3px;
+                width: 8%;
+            }
+            .open, .close{
+                display:block;
+            }
+            .close{
+                visibility: hidden;
+            }
+            .menu{
+                z-index: 2;
+                display: none;
+                position: absolute;
+                top: 50px;
+                left: 4px;
+                width: 320px;
+                height: 225px;
+                background-color: white;
+                box-shadow: 0px 3px 8px  rgba(128, 124, 124, 0.253);
+                &__item{
+                    display: block;
+                    margin: 15px 0;
+                    text-align: center;
+                    hr{
+                        width: 90%;
+                        margin: 0 auto;
+                        height: 1px;
+                        background-color: $color4;
+    
+                    }
+                }
+               
+                
+                   
+            } 
+            #checkbox:checked~.menu {
+                display: block;
+            } 
+            #checkbox:checked~.open {
+                visibility: hidden;
+            }  
+            #checkbox:checked~.close {
+                visibility: visible;
+            }  
+            
+            
+    
+    
+        }
+        
+            
+            
+        
+    }
+
+}
+

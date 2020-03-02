@@ -1,0 +1,109 @@
+section{
+    position: fixed;
+    top: 120px;
+    left: 0 ;
+    right: 0 ;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    
+    .info {
+        margin-top: 80px;
+        display: block;
+        width: 50%;
+        color:$color2;
+        padding: 2% 0 0 15%;
+        letter-spacing: 2px;
+
+        span{
+            background-color: $color1;
+            color: $color4;
+            border-radius: 20px;
+            padding: 0 10px 6px 10px;
+            margin-right: 2%;
+        }
+        &__spacing{
+            letter-spacing: normal;
+            padding: 5% 0;
+            &--style1{
+                color:$color1;
+                font-family:$secondaryfont;
+                font-size: 4em;
+                font-weight: bolder;
+                line-height: .6;
+            }
+            &--style2{
+                font-variant-caps: normal;
+                color:$color3;
+            }
+        }
+        &__button{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 6%;
+            button{
+                display: inline-block;
+                font-family: $secondaryfont;
+                font-size: 1em;
+                font-weight: 400;
+                font-variant-caps: all-petite-caps;
+                background-color: $primarycolor;
+                color: $color4;
+                border: none;
+                border-radius: 5px;
+                padding: 1% 5% 2% 5%;
+                margin-top: -6px;
+                &:hover{
+                    background-color:hsla(0, 100%, 68%, 0.616);    
+                }
+            }
+            p{
+                display: inline-block;
+                margin-left: 2%;
+            }
+        }
+    }
+    .board {
+        display: block;
+        width: 50%;
+        img{
+            padding: 10%;
+        }
+    }
+}
+@media screen and (min-width:376px){
+    section{
+        flex-wrap: nowrap;
+     
+    }
+
+}
+@media screen and (max-width:376px){
+    
+    section{
+        top: 60px;
+        .board{
+            width: 100%;
+            img{
+                width: 138%;
+                padding-left: 0;
+            }
+
+        }
+        .info{
+            width: 100%;
+            padding:5%;
+            font-size: 1em;
+            &__spacing{
+                font-size: 2.5em;
+                &--style2{
+                    font-size: .8em;
+                }
+            }
+        }
+
+    }
+    
+}
